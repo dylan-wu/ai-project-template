@@ -6,10 +6,7 @@ export default function Home() {
   const [input2, setInput2] = useState("")
   const [data, setData] = useState({outputs: [""]})
   async function onSubmit() {
-    // const response = await fetch(`api/multi?input1=${input1}&input2=${input2}`, {
-    //   method: "GET",
-    // })
-    const response = await fetch(`api/gpt3?input1=${input1}`, {
+    const response = await fetch(`api/multi?input1=${input1}&input2=${input2}`, {
       method: "GET",
     })
     setData(await response.json())
@@ -34,8 +31,7 @@ export default function Home() {
       </div>
       <div className="border-2 border-rose-200 px-4 py-2 rounded-md h-full">
         <p className={`${data.outputs ? "text-black" : "text-rose-400 italic"}`}>
-          {/* {data.outputs ? data.outputs : "Output will appear here..."} */}
-          {data.result.choices[0].text}
+          {data.outputs[0] ? data.outputs[0] : "Output will appear here..."}
         </p>
       </div>
     </div>
