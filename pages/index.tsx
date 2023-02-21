@@ -3,10 +3,9 @@ import { useState } from 'react'
 
 export default function Home() {
   const [input1, setInput1] = useState("")
-  const [input2, setInput2] = useState("")
   const [data, setData] = useState({outputs: [""]})
   async function onSubmit() {
-    const response = await fetch(`api/multi?input1=${input1}&input2=${input2}`, {
+    const response = await fetch(`api/multi?input1=${input1}`, {
       method: "GET",
     })
     setData(await response.json())
@@ -26,7 +25,6 @@ export default function Home() {
       </div>
       <div className="flex flex-col gap-4 mb-4">
         <input className="border-2 border-grey-300 px-4 py-2 rounded-md" value={input1} onChange={e => setInput1(e.target.value)} placeholder="Input 1"/>
-        {/* <input className="border-2 border-grey-300 px-4 py-2 rounded-md" value={input2} onChange={e => setInput2(e.target.value)} placeholder="Input 2"/> */}
         <button className="border-2 border-rose-200 px-4 py-2 rounded-md text-black font-semibold bg-rose-300" onClick={onSubmit}>Generate</button>
       </div>
       <div className="border-2 border-rose-200 px-4 py-2 rounded-md h-full">
