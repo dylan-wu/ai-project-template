@@ -8,7 +8,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const input1 = req.query.input1
+  const input1 = req.body.input1
   const input2 = req.query.input2
 
   const response = await fetch("https://prometheus-api.llm.llc/api/workflow/T6pDJY4ss7q7Sei86JZ9", {
