@@ -1,17 +1,35 @@
 import { useState } from 'react'
 
 export default function Home() {
-  const [input1, setInput1] = useState("")
+  const [system, setSystem] = useState("")
+  const [assistant, setAssistant] = useState("")
+  const [user, setUser] = useState("")
   const [pressed, setPressed] = useState(false)
-  const [data, setData] = useState({outputs: [""]})
+  const [data, setData] = useState({result: {role: "", content: ""}})
+  // async function onSubmit() {
+  //   setPressed(true)
+  //   const response = await fetch(`api/multi`, {
+  //     method: "POST",
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: `{"input1":"${input1.replace('"', '').replace('\\','')}"}`
+
+  //   })
+  //   setData(await response.json())
+  //   console.log(data)
+  //   setPressed(false)
+
+  //   return data
+  // }
   async function onSubmit() {
     setPressed(true)
-    const response = await fetch(`api/multi`, {
+    const response = await fetch(`api/gpt3`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
       },
-      body: `{"input1":"${input1.replace('"', '').replace('\\','')}"}`
+      body: `{"system":"${system}", "assistant":"${assistant}", "user":"${user}"}`
 
     })
     setData(await response.json())
@@ -32,12 +50,14 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col gap-4 mb-4">
-          <input className="border-2 border-grey-300 px-4 py-2 rounded-md" value={input1} onChange={e => setInput1(e.target.value)} placeholder="Input 1"/>
+          <input className="border-2 border-grey-300 px-4 py-2 rounded-md" value={system} onChange={e => setSystem(e.target.value)} placeholder="Describe who the AI is, a storyteller, an accountant, etc."/>
+          <input className="border-2 border-grey-300 px-4 py-2 rounded-md" value={assistant} onChange={e => setAssistant(e.target.value)} placeholder="Any useful information that the AI should know about the answer"/>
+          <input className="border-2 border-grey-300 px-4 py-2 rounded-md" value={user} onChange={e => setUser(e.target.value)} placeholder="Your question"/>
           <button className="border-2 border-rose-200 px-4 py-2 rounded-md text-black font-semibold bg-rose-300" onClick={onSubmit}>{`${pressed ? "Generating response..." : "Generate"}`}</button>
         </div>
         <div className="border-2 border-rose-200 px-4 py-2 rounded-md h-full mb-12">
-          <p className={`${data.outputs ? "text-black" : "text-rose-400 italic"}`}>
-            {data.outputs[0] ? data.outputs[0] : "Output will appear here..."}
+          <p className={`${data.result.content ? "text-black" : "text-rose-400 italic"}`}>
+            {data.result.content ? data.result.content : "Output will appear here..."}
           </p>
         </div>
         <div className="flex flex-col gap-4 mb-4">
@@ -60,6 +80,10 @@ export default function Home() {
             <h3 className="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">How can I contact you?</h3>
             <p>You can contact me via my email: dylanwu@live.com</p>
           </div>
+        </div>
+        <div className="absolute bottom-0">
+          <p className="text-gray-500 text-sm">Made with ❤️ by Dylan Wu</p>
+          <p className="text-gray-500 text-sm">We are not responsible for any of the generated outputs</p>
         </div>
       </div>
     </>
