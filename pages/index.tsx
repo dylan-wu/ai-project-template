@@ -13,7 +13,7 @@ export default function Home() {
   //     headers: {
   //       'Content-Type': 'application/json'
   //     },
-  //     body: `{"input1":"${input1.replace('"', '').replace('\\','')}"}`
+  //     body: `{"input1":"${input1.replaceAll('"', '').replaceAll('\\','')}"}`
 
   //   })
   //   setData(await response.json())
@@ -24,7 +24,7 @@ export default function Home() {
   // }
   async function onSubmit() {
     setPressed(true)
-    const response = await fetch(`api/gpt3`, {
+    const response = await fetch(`api/chatgpt`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
