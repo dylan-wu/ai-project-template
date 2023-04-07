@@ -66,19 +66,15 @@ export default function Home() {
           </h2>
           <div>
             <h3 className="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">How do I use this?</h3>
-            <p>Type in your question in the input box above, and click generate!</p>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">Why are you making this?</h3>
-            <p>I am trying to improve my skills in building apps and projects, and I love AI, so I decided to dedicate myself to creating AI apps everyday!</p>
+            <p>Use the first two fields to shape the AI's response to the question you enter in the third field</p>
           </div>
           <div>
             <h3 className="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">Do you make apps for other people?</h3>
-            <p>We do!<br/><br/>If you have an app idea you want to contact us about, you can email me at dylanwu@live.com or fill out this google form: <a className="underline text-blue-500" href="https://forms.gle/4EHdEAxoWycSnmK28">https://forms.gle/4EHdEAxoWycSnmK28</a></p>
+            <p>Yes! I'm a consultant at Metamorph AI where we build tailored, AI-driven apps and integrations to help companies boost sales, and enhance productivity. <a href="https://www.metamorphai.co/">https://www.metamorphai.co/</a></p>
           </div>
           <div>
             <h3 className="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">How can I contact you?</h3>
-            <p>You can contact me via my email: dylanwu@live.com</p>
+            <p>You can schedule a discovery call with us using Calendly <a href="https://calendly.com/d/yng-2f9-7hc/leveraging-the-latest-ai-advancements-a-d">https://calendly.com/d/yng-2f9-7hc/leveraging-the-latest-ai-advancements-a-d</a></p>
           </div>
         </div>
         <div className="absolute bottom-0">
