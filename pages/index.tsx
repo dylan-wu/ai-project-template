@@ -74,7 +74,7 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">How can I contact you?</h3>
-            <p>You can <a href="https://calendly.com/d/yng-2f9-7hc/leveraging-the-latest-ai-advancements-a-d"><a href="https://calendly.com/d/yng-2f9-7hc/leveraging-the-latest-ai-advancements-a-d">schedule a discovery call</a> with us using Calendly </p>
+            <p>You can <a href="https://calendly.com/d/yng-2f9-7hc/leveraging-the-latest-ai-advancements-a-d">schedule a discovery call</a> with us using Calendly </p>
           </div>
         </div>
         <div className="absolute bottom-0">
