@@ -43,10 +43,10 @@ export default function Home() {
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Lorem Ipsum
+            AI App Protoyper
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Lorem ipsum dolor sat amet.
+            Prototype your AI app in minutes!
           </p>
         </div>
         <div className="flex flex-col gap-4 mb-4">
@@ -56,7 +56,7 @@ export default function Home() {
           <button className="border-2 border-rose-200 px-4 py-2 rounded-md text-black font-semibold bg-rose-300" onClick={onSubmit}>{`${pressed ? "Generating response..." : "Generate"}`}</button>
         </div>
         <div className="border-2 border-rose-200 px-4 py-2 rounded-md h-full mb-12">
-          <p className={`${data.result.content ? "text-black" : "text-rose-400 italic"}`}>
+          <p className={`prose ${data.result.content ? "text-black" : "text-rose-400 italic"}`}>
             {data.result.content ? data.result.content : "Output will appear here..."}
           </p>
         </div>
