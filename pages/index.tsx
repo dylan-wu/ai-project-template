@@ -43,7 +43,7 @@ export default function Home() {
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            AI App Protoyper
+            AI App Prototyper
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Prototype your AI app in minutes!
@@ -70,11 +70,11 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">Do you make apps for other people?</h3>
-            <p>Yes! I&apos;m a consultant at Metamorph AI where we build tailored, AI-driven apps and integrations to help companies boost sales, and enhance productivity. <a href="https://www.metamorphai.co/">https://www.metamorphai.co/</a></p>
+            <p>Yes! I&apos;m a consultant at <a href="https://www.metamorphai.co/">Metamorph AI</a> where we build tailored, AI-driven apps and integrations to help companies boost sales, and enhance productivity.</p>
           </div>
           <div>
             <h3 className="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">How can I contact you?</h3>
-            <p>You can schedule a discovery call with us using Calendly <a href="https://calendly.com/d/yng-2f9-7hc/leveraging-the-latest-ai-advancements-a-d">https://calendly.com/d/yng-2f9-7hc/leveraging-the-latest-ai-advancements-a-d</a></p>
+            <p>You can <a href="https://calendly.com/d/yng-2f9-7hc/leveraging-the-latest-ai-advancements-a-d"><a href="https://calendly.com/d/yng-2f9-7hc/leveraging-the-latest-ai-advancements-a-d">schedule a discovery call</a> with us using Calendly </p>
           </div>
         </div>
         <div className="absolute bottom-0">
