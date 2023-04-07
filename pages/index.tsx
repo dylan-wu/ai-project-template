@@ -66,11 +66,11 @@ export default function Home() {
           </h2>
           <div>
             <h3 className="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">How do I use this?</h3>
-            <p>Use the first two fields to shape the AI's response to the question you enter in the third field</p>
+            <p>Use the first two fields to shape the AI&apos;s response to the question you enter in the third field</p>
           </div>
           <div>
             <h3 className="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">Do you make apps for other people?</h3>
-            <p>Yes! I'm a consultant at Metamorph AI where we build tailored, AI-driven apps and integrations to help companies boost sales, and enhance productivity. <a href="https://www.metamorphai.co/">https://www.metamorphai.co/</a></p>
+            <p>Yes! I&apos;m a consultant at Metamorph AI where we build tailored, AI-driven apps and integrations to help companies boost sales, and enhance productivity. <a href="https://www.metamorphai.co/">https://www.metamorphai.co/</a></p>
           </div>
           <div>
             <h3 className="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">How can I contact you?</h3>
