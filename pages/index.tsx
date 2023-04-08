@@ -60,7 +60,7 @@ export default function Home() {
             {data.result.content ? data.result.content : "Output will appear here..."}
           </p>
         </div>
-        <div className="flex flex-col gap-4 mb-4">
+        {/* <div className="flex flex-col gap-4 mb-4">
           <h2 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl text-center">
             FAQ
           </h2>
@@ -76,7 +76,7 @@ export default function Home() {
             <h3 className="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">How can I contact you?</h3>
             <p>You can <a href="https://calendly.com/d/yng-2f9-7hc/leveraging-the-latest-ai-advancements-a-d">schedule a discovery call</a> with us using Calendly </p>
           </div>
-        </div>
+        </div> */}
         <div className="absolute bottom-0">
           <p className="text-gray-500 text-sm">Made with ❤️ by Dylan Wu</p>
           <p className="text-gray-500 text-sm">We are not responsible for any of the generated outputs</p>
