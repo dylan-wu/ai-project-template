@@ -50,9 +50,9 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col gap-4 mb-4">
-          <input className="border-2 border-grey-300 px-4 py-2 rounded-md" value={system} onChange={e => setSystem(e.target.value)} placeholder="Describe who the AI is, a storyteller, an accountant, etc."/>
-          <input className="border-2 border-grey-300 px-4 py-2 rounded-md" value={assistant} onChange={e => setAssistant(e.target.value)} placeholder="Any useful information that the AI should know about the answer"/>
-          <input className="border-2 border-grey-300 px-4 py-2 rounded-md" value={user} onChange={e => setUser(e.target.value)} placeholder="Your question"/>
+          <input className="border-2 border-gray-500 font-semibold px-4 py-2 rounded-md" value={system} onChange={e => setSystem(e.target.value)} placeholder="Describe who the AI is, a storyteller, an accountant, etc."/>
+          <input className="border-2 border-gray-500 font-semibold px-4 py-2 rounded-md" value={assistant} onChange={e => setAssistant(e.target.value)} placeholder="Any useful information that the AI should know about the answer"/>
+          <input className="border-2 border-gray-500 font-semibold px-4 py-2 rounded-md" value={user} onChange={e => setUser(e.target.value)} placeholder="Your question"/>
           <button className="border-2 border-rose-200 px-4 py-2 rounded-md text-black font-semibold bg-rose-300" onClick={onSubmit}>{`${pressed ? "Generating response..." : "Generate"}`}</button>
         </div>
         <div className="border-2 border-rose-200 px-4 py-2 rounded-md h-full mb-12">
