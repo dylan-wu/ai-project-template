@@ -79,7 +79,7 @@ export default function Home() {
         </div> */}
         <div className="absolute bottom-0">
           <p className="text-gray-500 text-sm">Made with ❤️ by Dylan Wu</p>
-          <p className="text-gray-500 text-sm">We are not responsible for any of the generated outputs</p>
+          <p className="text-gray-500 text-sm">We are not responsible for any of the generated outputs.</p>
         </div>
       </div>
     </>
